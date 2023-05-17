@@ -34,14 +34,14 @@ body
 
 .btn-close
 {
-  background-image: url('/1.4/img/burger-close.png');
+  background-image: url('img/burger-close.png');
 }
 
 .link-logo
 {
   width: 97px;
   height: 51px;
-  background-image: url('/1.4/img/logo.svg');
+  background-image: url('/img/logo.svg');
 }
 
 .aside-header__link:last-of-type
@@ -51,7 +51,7 @@ body
 
 .link-search
 {
-  background-image: url('/1.4/img/search.png');
+  background-image: url('/img/search.png');
 }
 
 .aside-menu__nav
@@ -78,27 +78,39 @@ body
 
 .nav-list__item:hover::before {
   content: '';
-  background-image: url('/1.4/img/highlight.svg');
+  background-image: url('/img/highlight.svg');
   width:4px;
   height: 32px;
   position:absolute;
   left:0px;
 }
 
-.link-call {
-  background-image: url('/1.4/img/call.svg');
+.aside-menu-footer
+{
+  height: 204px;
+}
+
+.aside-menu-footer__txt-lang
+{
+  /* display: inline-block; */
+}
+
+.link-call 
+{
+  background-image: url('/img/call.svg');
   display: inline-block;
   margin: 8px;
 }
 
 .link-chat {
-  background-image: url('/1.4/img/chat.svg');
+  background-image: url('/img/chat.svg');
   display: inline-block;
   margin: 8px;
 }
 
-.link-profile {
-  background-image: url('/1.4/img/profile.svg');
+.link-profile 
+{
+  background-image: url('/img/profile.svg');
   display: inline-block;
   margin: 8px;
 }
@@ -106,4 +118,3 @@ body
 .aside-menu-footer__txt-lang:hover {
   color: #7E7E82;
 }
-
