@@ -5,20 +5,21 @@ body
 
 .aside-menu
 {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  width: 320px;
   height: 100%;
   margin:0;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
-  padding:24px;
+  padding: 0 24px;
 }
 
 .aside-header
 {
+  width: 320px;
   height: 51px;
   margin:0;
-  border:1px solid black;
   display: flex;
   align-items: center;
   gap:16.73px;
@@ -76,6 +77,7 @@ body
   /* align-items: center; */
 }
 
+
 .nav-list__item:hover::before {
   content: '';
   background-image: url('/img/highlight.svg');
@@ -87,7 +89,7 @@ body
 
 .aside-menu-footer
 {
-  height: 204px;
+  /* height: 204px; */
 }
 
 .aside-menu-footer__txt-lang
