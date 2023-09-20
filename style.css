@@ -13,6 +13,7 @@ body
   margin:0;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
   padding: 0 24px;
+  padding-top: 18.73px;
 }
 
 .aside-header
@@ -25,8 +26,8 @@ body
   gap:16.73px;
 }
 
-.aside-header__link,
-.aside-footer__link
+.aside__link,
+.aside__link
 {
   display: inline-block;
   width: 40px;
@@ -35,30 +36,38 @@ body
 
 .btn-close
 {
+  
   background-image: url('img/burger-close.png');
+  background-color: white;
+  border: none;
 }
 
 .link-logo
 {
   width: 97px;
   height: 51px;
-  background-image: url('/img/logo.svg');
+  background-image: url('img/logo.svg');
+  background-color: white;
+  border: none;
 }
 
-.aside-header__link:last-of-type
+.aside__link:last-child
 {
   margin-left: auto;
 }
 
 .link-search
 {
-  background-image: url('/img/search.png');
+  background-image: url('img/search.png');
+  background-color: white;
+  border: none;
 }
 
 .aside-menu__nav
 {
-  margin: 46px 0 auto 0;
+  margin: 52px 0 auto 0;
   padding:0;
+  
 }
 
 .nav-list
@@ -68,55 +77,71 @@ body
 
 .nav-list__item {
   display: block;
-  margin: 12px 0;
-  /* align-items: center; */
+  margin-bottom: 32px;
+  position:relative;
+  text-decoration:none;
+  color:black;
 }
 
 .nav-list__item:hover {
   color: #7E7E82;
-  /* align-items: center; */
+  
 }
 
 
 .nav-list__item:hover::before {
   content: '';
-  background-image: url('/img/highlight.svg');
+  background-image: url('img/highlight.svg');
+ 
   width:4px;
   height: 32px;
   position:absolute;
-  left:0px;
-}
+  left:-24px;
+  top:-5px;
+    }
 
 .aside-menu-footer
 {
-  /* height: 204px; */
+  height: 224px;
+  
+}
+
+.aside-menu__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 
 .aside-menu-footer__txt-lang
 {
-  /* display: inline-block; */
+  display: inline-block;
+
 }
 
 .link-call 
 {
-  background-image: url('/img/call.svg');
-  display: inline-block;
+  background-image: url('img/call.svg');
   margin: 8px;
+  background-color: white;
+  border: none;
 }
 
 .link-chat {
-  background-image: url('/img/chat.svg');
-  display: inline-block;
+  background-image: url('img/chat.svg');
   margin: 8px;
+  background-color: white;
+  border: none;
 }
 
 .link-profile 
 {
-  background-image: url('/img/profile.svg');
-  display: inline-block;
+  background-image: url('img/profile.svg');
   margin: 8px;
+  background-color: white;
 }
+
 
 .aside-menu-footer__txt-lang:hover {
   color: #7E7E82;
+ 
 }
